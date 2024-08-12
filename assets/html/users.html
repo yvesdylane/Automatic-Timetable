@@ -12,7 +12,7 @@
             <img src="../images/logo.svg" id="logo" width="80" height="80"> <span>AutoShed</span>
         </div>
         <a href="#"><img src="../images/fluent-mdl2--b-i-dashboard.svg" width="40" hight="40"> <span>Dashbord</span></a>
-        <a href="#" class="active"><img src="../images/fa-solid--user-cog.svg" width="40" hight="40"> <span>Users</span></a>
+        <a class="active"><img src="../images/fa-solid--user-cog.svg" width="40" hight="40"> <span>Users</span></a>
         <a href="#"><img src="../images/mdi--town-hall.svg" width="40" hight="40"> <span>Classes</span></a>
         <a href="course.html"><img src="../images/noto-v1--books.svg" width="40" hight="40"> <span>Courses</span></a>
         <a href="#"><img src="../images/mdi--timetable.svg" width="40" hight="40"> <span>TimeTable</span></a>
@@ -22,10 +22,10 @@
 
     <div class="mainContainer">
         <div class="header">
-            <h1>USERS</h1>
+            <h1>Courses</h1>
             <div class="search">
                 <button><img src="../images/wpf--search.svg" width="30" height="30"></button>
-                <input type="text" placeholder="User name">
+                <input type="text" placeholder="Course title">
             </div>
             <div class="info">
                 <button><img src="../images/streamline--ringing-bell-notification.svg" width="30" height="30"></button>
@@ -34,6 +34,74 @@
             </div>
         </div>
 
+        <div class="type">
+            <button id="one" class="me" onclick="changeClass('lectures', 'admin', 'one', 'two',)">Lectures</button>
+            <button id="two" class="notMe" onclick="changeClass('admin', 'lectures', 'two', 'one')">Administrators</button>
+        </div>
+
+        <div class="table" active="true" id="lectures">
+            <div class="header">Lecturers <a href="courseCreation.html"><img src="../images/icon-park-twotone--add-one.svg" width="30"></a></div>
+
+            <div class="contain">
+                <div class="title">
+                    <p>Id</p>
+                    <p>Name</p>
+                    <p>Tell</p>
+                    <p>Email</p>
+                    <p>Password</p>
+                    <p>speciality</p>
+                    <p>Action</p>
+                </div>
+                <div class="row">
+                    <p>0761</p>
+                    <p>Fabric Ndongo</p>
+                    <p>6-77-50-50-99</p>
+                    <p>fabricejunior02004@gmail.com</p>
+                    <p>DonfackGinett2</p>
+                    <p>Software enginearing</p>
+                    <p>
+                        <img src="../images/hugeicons--file-view.svg" width="20">
+                        <img src="../images/fa--edit.svg" width="20">
+                        <img src="../images/weui--delete-on-filled.svg" width="20">
+                    </p>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="table" active="false" id="admin">
+            <div class="header">Administrators<a href="courseCreation.html"><img src="../images/icon-park-twotone--add-one.svg" width="30"></a></div>
+
+            <div class="contain">
+                <div class="title">
+                    <p>Id</p>
+                    <p>Name</p>
+                    <p>Tell</p>
+                    <p>Email</p>
+                    <p>Password</p>
+                    <p>speciality</p>
+                    <p>Action</p>
+                </div>
+    
+                <div class="row">
+                    <p>0761</p>
+                    <p>Fabric Ndongo</p>
+                    <p>6-77-50-50-99</p>
+                    <p>fabricejunior02004@gmail.com</p>
+                    <p>DonfackGinett2</p>
+                    <p>Software enginearing</p>
+                    <p>
+                        <img src="../images/hugeicons--file-view.svg" width="20">
+                        <img src="../images/fa--edit.svg" width="20">
+                        <img src="../images/weui--delete-on-filled.svg" width="20">
+                    </p>
+                </div>
+
+            </div>
+            
+        </div>
     </div>
+
+    <script src="../js/userChange.js"></script>
 </body>
 </html>
