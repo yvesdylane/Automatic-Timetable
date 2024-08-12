@@ -13,19 +13,18 @@
         </div>
         <a href="../../index.html"><img src="../images/fluent-mdl2--b-i-dashboard.svg" width="40" hight="40"> <span>Dashbord</span></a>
         <a href="users.html"><img src="../images/fa-solid--user-cog.svg" width="40" hight="40"> <span>Users</span></a>
-        <a class="active"><img src="../images/mdi--town-hall.svg" width="40" hight="40"> <span>Classes</span></a>
+        <a href="classes.html"><img src="../images/mdi--town-hall.svg" width="40" hight="40"> <span>Classes</span></a>
         <a href="course.html"><img src="../images/noto-v1--books.svg" width="40" hight="40"> <span>Courses</span></a>
-        <a href="timetable.html"><img src="../images/mdi--timetable.svg" width="40" hight="40"> <span>TimeTable</span></a>
+        <a class="active"><img src="../images/mdi--timetable.svg" width="40" hight="40"> <span>TimeTable</span></a>
         <a href="#"><img src="../images/icon-park-outline--setting-two.svg" width="40" hight="40"> <span>Settings</span></a>
-        <a href="../../login.html"><img src="../images/majesticons--logout-line.svg" width="40" hight="40"> <span>Logout</span></a>
+        <a href="#"><img src="../images/majesticons--logout-line.svg" width="40" hight="40"> <span>Logout</span></a>
     </div>
 
     <div class="mainContainer">
         <div class="header">
-            <h1>Classes</h1>
+            <h1>Timetable</h1>
             <div class="search">
                 <button><img src="../images/wpf--search.svg" width="30" height="30"></button>
-                <input type="text" placeholder="class title">
             </div>
             <div class="info">
                 <button><img src="../images/streamline--ringing-bell-notification.svg" width="30" height="30"></button>
@@ -34,35 +33,52 @@
             </div>
         </div>
 
-       
 
-        <div class="table" active="true" id="lectures">
-            <div class="header">Classes<a href="classCreation.html"><img src="../images/icon-park-twotone--add-one.svg" width="30"></a></div>
+        <div class="table" active="true" id="timetable">
+            <div class="header">Schedule <a href="timetablecreation.html"><img src="../images/icon-park-twotone--add-one.svg" width="30"></a></div>
 
             <div class="contain">
                 <div class="title">
-                    <p> id</p>
-                    <p>level</p>
+                    <p>Id</p>
+                    <p>Class</p>
+                    <p>Semester</p>
                     <p>speciality</p>
-                    <p>department</p>
                     <p>Action</p>
                 </div>
                 <div class="row">
-                    <p>o1</p>
-                    <p>HNT IT-1</p>
-                    <p>Software enginearing</p>
-                    <p>enginearing</p>
+                    <p>0560</p>
+                    <p>Level 1</p>
+                    <P>Network and security</P>
+                    <p>1st</p>
                     <p>
                         <img src="../images/hugeicons--file-view.svg" width="20">
                         <img src="../images/fa--edit.svg" width="20">
                         <img src="../images/weui--delete-on-filled.svg" width="20">
                     </p>
                 </div>
+                
+                    <div class="row">
+                        <p>0564</p>
+                        <p>Level 1</p>
+                        <P>Software Engineering</P>
+                        <p>1st</p>
+                        <p>
+                            <img src="../images/hugeicons--file-view.svg" width="20">
+                            <img src="../images/fa--edit.svg" width="20">
+                            <img src="../images/weui--delete-on-filled.svg" width="20">
+                        </p>
+                    </div>
+             </div>
+                      
+                
             </div>
             
         </div>
 
+        
+            
     </div>
 
+    <script src="../js/userChange.js"></script>
 </body>
 </html>

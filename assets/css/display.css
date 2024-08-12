@@ -1,0 +1,80 @@
+.display{
+    margin: 2vh;
+    box-sizing: border-box;
+    display: flex;
+}
+.numbers{
+    display: flex;
+    margin: 1.5vh;
+    box-shadow: 1px 6px 15px rgba(0, 0, 0, 0.61);
+    height: 74vh;
+    width: 50vw;
+    flex-wrap: wrap;
+    padding: 2.5vh;
+    padding-bottom: 0;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+.numbers a{
+    text-decoration: none;
+    color: teal;
+    font-weight: bolder;
+    font-style: oblique;
+}
+.numbers .info{
+    box-sizing: border-box;
+    padding: 0;
+    border: solid aquamarine;
+    height: 30vh;
+    width: 23vw;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.363);
+}
+.numbers .info .img{
+    width: 100%;
+    background-color: turquoise;
+    height: 45%;
+    padding-top: 4px;
+    box-sizing: border-box;
+    justify-content: center;
+    padding-left: 8.5vw;
+    border-bottom: solid aquamarine;
+}
+.info .img img{
+    border-radius: 50%;
+}
+.info .data{
+    text-align: center;
+}
+.data h2{
+    margin-bottom: 0;
+}
+.data p{
+    font-size: 50px;
+    margin-top: 0;
+    padding: 0;
+    color: turquoise;
+}
+.see{
+    display: none;
+}
+.information{
+    margin-left: 2vw;
+    width: 34vw;
+    height: 82vh;
+    box-sizing: border-box;
+    text-align: center;
+}
+.information h2{
+    color: turquoise;
+    font-weight: bolder;
+    text-decoration: underline;
+    font-size: 30px;
+    margin-top: 0;
+}
+#myChart{
+    height: 60vh;
+    width: 30vw;
+    box-sizing: border-box;
+}

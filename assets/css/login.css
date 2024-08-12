@@ -1,174 +1,97 @@
-*{
+/* Basic reset and centering */
+html, body {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: "poppins",sans-serif;
-}
-body{
-    background-image:url(../images/backgrond.png);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../images/backgrond.png'); 
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
-.container
-{
-    background: white;
-    width: 80%;
-    height: 80vh;
-    border-radius: 2.5rem;
-    padding: 1.5rem;
-    align-items: center;
-    margin-top: 10px;
+.container {
     display: flex;
-    box-shadow: 2px 5px 5px rgba(0,0,0,0.3);
+    align-items: stretch;
+    background-color: #ffffff;
+    border-radius: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 84vw;
+    height: 70vh;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding-left: 3vw;
+    padding-right: 3vw;
 }
-.box1
-{
-    flex-basis: 50%;
-    background-image: url('../images/side-image.png');
-    background-size: 100%;
+
+.image-container {
+    flex: 1;
+    background-image: url('../images/side-image.png'); 
+    background-size: cover;
     background-position: center;
-    border: 2px aquamarine solid;
-    background-repeat: no-repeat;
-    height: 96%;
+    height: 59VH;
+    border-bottom: aquamarine solid 2px;
+    border-top: solid aquamarine 2px;
+    margin-right: 1.5vw;
 }
 
-.box2
-{
-
-    flex-basis: 50%;
-    padding:0 10px;
-    height: 96%;
+.form-container {
+    flex: 1;
+    margin-left: 1.5vw;
+    padding: 0;
+    height: 59vh;
 }
 
-.header
-{
-    background: linear-gradient(teal, aquamarine);
-    height: 5rem;
-    border-radius: 2rem 2rem 0 0;
-    box-shadow: 2px 5px 5px rgba(0,0,0,0.3);
+.hearder{
+    background: linear-gradient(to bottom, teal, turquoise);
+    width: 100%;
+    height: 12vh;
+    margin-top: 0;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    box-shadow: 6px 8px 12px rgba(0, 0, 0, 0.322);
+}
+
+img{
+    width: 10vw;
+    border-radius: 50%;
+    border: solid 4px turquoise;
     position: relative;
-    margin-bottom: 3rem;
-}
-.profile{
-    position: absolute;
-    left: 50px;
-    top: 3px;
-    transform: translateX(50px);
-    padding: 40px;
-    border: solid linear-gradient(teal, aquamarine) 5px;
+    top: -9vh;
+    right: -13vw;
+    box-shadow: 6px 8px 12px rgba(0, 0, 0, 0.322);
+    margin-bottom: -7.5vh;
 }
 
-
-input
-{
-    width: 80%;
+input{
     border: none;
-    border-bottom: 2px solid teal; 
-    outline: none;
+    border-bottom: solid turquoise 0.2rem;
+    width: 30vw;
+    border-radius: 0.1rem;
+    font-size: 1.2rem;
+    margin-left: 3.5vw;
+    margin-bottom: 3vh;
 }
 label{
+    font-size: 1.2rem;
+    font-weight: bolder;
     color: teal;
+    margin-left: 3.5vw;
+    margin-bottom: 0.5vh;
+}
 
-}
-.label1{
-    margin-left: 20px;
-    margin-top: 50px;
-    
-    
-}
-.label2{
-    margin-left: 20px;
-    margin-top: 50px;
-}
-.logIn{
-    margin-left: 20px;
-    margin-top: 20px; 
-    display: flex;
-    justify-content: center;
-    margin-top: 50px;
-}
-.logIn a{
-    text-decoration: none;
-    border-radius: 20px;
-    font-size: 20px;
-    font-weight: 20px;
-    background: linear-gradient( to right, aquamarine,teal);
-    padding: 10px;
-    color: black;
-}
-/*.wrapper{
-    width: 420px;
-    background:greenyellow;
-    color: #fff;
-}
-.wrapper h1{
-    font-size: 36px;
-    text-align: center;
-}
-.wrapper .input-box{
-    width: 100%;
-    height: 50px;
-   
-    margin: 30px 0;
-}
-.input-box input{
-    width: 100%;
-    height: 100%;
-    background: transparent;
-    border: none;
-    outline: none;
-    border: 2px solid rgba(255,255,255,.2);
-    border-radius: 40px;
-    font-size: 16px;
-    color: #fff;
-    padding: 20px 45px 20px 20px;
-}
-.wrapper .remember-forgot{
-    display: flex;
-    justify-content: space-between;
-    font-size: 14.5px;
-    margin: .15px 0 15px;
-}
-.remember-forgot label input{
-    accent-color: #fff;
-    text-decoration: 3px;
-}
-.remember-forgot a{
-    color: #fff;
-    text-decoration: none;
-}
-.remember-forgot a:hover{
-    text-decoration: underline;
-}
-.wrapper .btn{
-    width: 100%;
-    height: 45px;
-    background: #fff;
-    border: none;
-    outline: none;
-    border-radius: 40px;
-    box-shadow: 0 0 10px rgba(0,0,0,.1);
+button{
+    font-size: 5vh;
+    padding: 1vh;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    border: aquamarine solid 2px;
+    border-radius: 3rem;
+    background: linear-gradient(to top, teal, turquoise);
+    margin-left: 13.5vw;
     cursor: pointer;
-    font-size: 16px;
-    color: green;
-    font-weight: 600;
 }
-.wrapper .register-link{
-    font-size: 14.5px;
-    text-align: center;
-    margin-top: 20px;
-}
-.register-link p a{
-    color: #fff;
-    text-decoration: none;
-    font-weight: 600;
-}
-.register-link p a:hover{
-    text-decoration: underline;
-}*/
